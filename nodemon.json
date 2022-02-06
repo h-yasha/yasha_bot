@@ -1,0 +1,11 @@
+{
+    "ignore": [".git", "public", "src/web"],
+    "verbose": true,
+    "execMap": {
+        "js": "node"
+    },
+    "runOnChangeOnly": false,
+    "watch": ["src"],
+    "ext": "js,ts",
+    "exec": "node --loader ts-node/esm -r tsconfig-paths/register ./src/main.ts"
+}
